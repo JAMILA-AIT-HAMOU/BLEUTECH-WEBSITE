@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 60%;
+}
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(60, 105, 125, 555);
+}
+.header {
+  background-color: rgb(57, 56, 56);
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 75px;
+
+  backdrop-filter: blur(10px);
+  padding-bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+.header-left-section {
+  width: 80px;
+}
+
+header img {
+  border-radius: 20px;
+  margin-bottom: 0rem;
+  width: 75px;
+  height: 85px;
+
+  top: 25rem;
+  width: 130px;
+  margin-left: 100px;
+}
+
+.header-middle-section {
+  margin-bottom: 15px;
+}
+.navbar a {
+  font-size: 25px;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+
+  border-bottom: 3px solid transparent;
+  transition: 0.4s ease-in-out;
+}
+.navbar a:hover {
+  color: rgb(3, 184, 255);
+  text-decoration: underline;
+}
+.header-right-section {
+  flex: 1;
+  max-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar {
+  flex: 1;
+  width: 1;
+  font-size: 20px;
+  height: 30px;
+  padding-left: 15px;
+  border: non;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 0 8px rgb(3, 184, 255), 0 0 8px white;
+}
+.search-button {
+  background-color: rgba(8, 70, 169, 255);
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex-shrink: 0;
+  align-items: center;
+  margin-right: 80px;
+
+  box-shadow: 0 0 8px rgb(3, 184, 255), 0 0 8px white;
+}
+.search-icon {
+  height: 22px;
+  width: 22px;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.content-container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  color: whitesmoke;
+  overflow: hidden;
+}
+.content {
+  max-width: 600px;
+  z-index: 2;
+  margin-right: 10px;
+}
+.content h1 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.shope-now-button {
+  background: rgb(3, 184, 255);
+  color: black;
+  padding: 1rem 2.5rem 1rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+
+  transition: 0.4s ease-in-out;
+}
+.explore-more-button {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  padding: 0.9rem 2rem 0.9rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+
+  transition: 0.4s ease-in-out;
+}
+.shope-now-button:hover,
+.explore-more-button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0 0 25px white;
+}/*
+.content-container img {
+  margin-left: 10px;
+  transition: 0.4s ease-in-out;
+  animation: slide 8s 2s infinite;
+  
+
+}*/
+.content-container-img{
+  width: 500px;
+  height: 500px;
+  margin-left: 10px;
+  transition: 0.4s ease-in-out;
+  background-image: url(../images/Garmin\ Venu®\ 3S\ \ Smaller\ Fitness\ and\ Health\ Smartwatch.png);
+  background-size: 100%;
+  animation: slide 20s 5ms infinite;
+}
+@keyframes slide {
+  0%{background-image: url(../images/Lenovo\ Yoga\ 9i\ w\ OLED\ Touchscreen.png);}
+  12%{background-image: url(../images/Garmin\ Venu®\ 3S\ \ Smaller\ Fitness\ and\ Health\ Smartwatch.png);}
+  25%{background-image: url(../images/Sony\ WH-1000XM4\ .png);}
+  37%{background-image: url(../images/Tripod\ Stand\,Buzhi\ Stick\ Max.png);}
+  50%{background-image: url(../images/Asus\ VY229HF\ .png);}
+  62%{background-image: url(../images/elago\ Charging\ Station.png);}
+  75%{background-image: url(../images/HP\ EliteBook\ 830\ G5.png);}
+  87%{background-image: url(../images/Garmin\ Venu®\ 3S\ \ Smaller\ Fitness\ and\ Health\ Smartwatch.png);}
+  100%{background-image: url(../images/INIU\ Portable\ Charger.png);}
+
+} 
+.content-container-img:hover {
+  transform: scale(1.1);
+  
+}
+
+.product-container {
+
+}
+h3{
+  color: white;
+  margin-top: 18px;
+  text-decoration: underline rgb(57, 56, 56);
+  font-size: 35px;
+  margin-left: 25px;
+}
+.new-arrival {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.product-container {
+  padding: 40px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(60, 105, 125, 555);
+  border-top: 1px solid rgba(60, 105, 125, 555);
+  border-bottom: 1px solid rgb(57, 56, 56);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  overflow-x: hidden;
+}
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.product-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.product-detaills{
+  max-height: 100px;
+  min-height: 100px;
+}
+.product-name {
+  color: whitesmoke;
+  font-weight: 20px;
+}
+.product-description{
+  color: whitesmoke;
+  font-size: 12px;
+}
+.product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+.product-stars {
+  margin-right: 6px;
+  color: yellowgreen;
+}
+.product-stars-count {
+  cursor: pointer;
+  margin-top: 3px;
+  padding-top: 5px;
+  font-size: 22px;
+  color: rgb(3, 184, 255);
+}
+.product-price {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  font-size: 16px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 50px;
+  background-color: rgb(3, 184, 255);
+  transition: 0.4s ease-in-out;
+}
+.add-to-cart-button:hover {
+  background-color: white;
+  box-shadow: 0 0 18px rgb(3, 184, 255), 0 0 18px white;
+  transform: scale(1.1);
+}
