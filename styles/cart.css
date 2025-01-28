@@ -1,3 +1,8 @@
+.header-middle-section .home{
+  color: white;
+}.header-middle-section .cart{
+  color: rgba(8, 70, 169, 255);
+}
 h4 {
   text-align: center;
   color: white;
@@ -79,6 +84,9 @@ h4 {
 }
 .add-delet-button button:hover{
   transform: scale(1.5);
+  background-color: rgb(3, 184, 255);
+  box-shadow: 0 0 10px rgb(3, 184, 255);
+  cursor: pointer;
 }
 .add-delet-button p{
   font-size: 18px;
@@ -121,7 +129,8 @@ h5{
 }
 .place-order button:hover{
   transform: scale(1.1);
-  box-shadow: 0 0 10px white;
+  box-shadow: 0 0 10px white, 0 0 25px rgb(3, 184, 255);
+  cursor: pointer;
 }
 .total{
   color: black;

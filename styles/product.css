@@ -1,3 +1,9 @@
+.header-middle-section .home{
+  color: white;
+}
+.header-middle-section .products{
+  color: rgba(8, 70, 169, 255);
+}
 .products-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

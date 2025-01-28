@@ -40,6 +40,7 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 5;
+  animation: slideTobuttom 3s ease forwards;
 }
 .header-left-section {
   width: 80px;
@@ -54,10 +55,15 @@ header img {
   top: 25rem;
   width: 130px;
   margin-left: 100px;
+  
+  animation: slideRight 5s ease forwards;
 }
 
 .header-middle-section {
   margin-bottom: 15px;
+}
+.header-middle-section .home{
+  color: rgba(8, 70, 169, 255);
 }
 .navbar a {
   font-size: 25px;
@@ -67,6 +73,8 @@ header img {
 
   border-bottom: 3px solid transparent;
   transition: 0.4s ease-in-out;
+  
+  animation: slideBottom 5s ease forwards;
 }
 .navbar a:hover {
   color: rgb(3, 184, 255);
@@ -92,8 +100,9 @@ header img {
   border-bottom-right-radius: 0;
   align-items: center;
   justify-content: center;
-
   box-shadow: 0 0 8px rgb(3, 184, 255), 0 0 8px white;
+  
+  animation: slideleft 5s ease forwards;
 }
 .search-button {
   background-color: rgba(8, 70, 169, 255);
@@ -105,14 +114,16 @@ header img {
   flex-shrink: 0;
   align-items: center;
   margin-right: 80px;
-
   box-shadow: 0 0 8px rgb(3, 184, 255), 0 0 8px white;
+  
+  animation: slideleft 5s ease forwards;
 }
 .search-icon {
   height: 22px;
   width: 22px;
   margin-left: 2px;
   margin-top: 3px;
+  animation: slideleft 5s ease forwards;
 }
 
 .content-container {
@@ -124,15 +135,19 @@ header img {
   text-align: left;
   color: whitesmoke;
   overflow: hidden;
+  
 }
 .content {
   max-width: 600px;
   z-index: 2;
   margin-right: 10px;
+  
+  animation: slideBottom 4s ease forwards;
 }
 .content h1 {
   font-weight: bold;
   margin-bottom: 1rem;
+  
 }
 .content p {
   font-size: 1.2rem;
@@ -178,7 +193,7 @@ header img {
   transition: 0.4s ease-in-out;
   background-image: url(../images/Garmin\ Venu®\ 3S\ \ Smaller\ Fitness\ and\ Health\ Smartwatch.png);
   background-size: 100%;
-  animation: slide 20s 5ms infinite;
+  animation: slide  20s 5ms infinite;
 }
 @keyframes slide {
   0%{background-image: url(../images/Lenovo\ Yoga\ 9i\ w\ OLED\ Touchscreen.png);}
@@ -202,7 +217,7 @@ header img {
 }
 h3{
   color: white;
-  margin-top: 18px;
+  margin-top:100px;
   text-decoration: underline rgb(57, 56, 56);
   font-size: 35px;
   margin-left: 25px;
@@ -290,12 +305,15 @@ h3{
   bottom: 0;
   width: 100%;
   padding-bottom: 5px;
-  background-color: rgb(57, 56, 56);}
+  background-color: rgb(57, 56, 56);
+  animation: slideTop 3s ease forwards;
+}
 .footer .social {
   text-align: center;
   padding-top: 15px;
 
   color:rgb(3, 184, 255);
+
 }
 .footer .social a img{
   font-size: 25px;
@@ -340,3 +358,56 @@ h3{
   font-size: 16px;
   color: white;
 }
+
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideTobuttom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideleft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
