@@ -1,6 +1,7 @@
-.header-middle-section .home{
+.header-middle-section .home {
   color: white;
-}.header-middle-section .cart{
+}
+.header-middle-section .cart {
   color: rgba(8, 70, 169, 255);
 }
 h4 {
@@ -13,7 +14,7 @@ h4 {
 .shoping-cart {
   margin-top: 55px;
 }
-.cart-container{
+.cart-container {
   margin-left: 100px;
   margin-right: 100px;
   display: grid;
@@ -29,9 +30,6 @@ h4 {
   flex-direction: row;
   margin-bottom: 10px;
   overflow-x: hidden;
- 
-  
-  
 }
 .products-image {
   display: flex;
@@ -56,7 +54,7 @@ h4 {
   color: whitesmoke;
   font-size: 12px;
 }
-.add-delet-button{
+.add-delet-button {
   border: 3px solid rgb(3, 184, 255);
   display: flex;
   flex-direction: row;
@@ -69,28 +67,28 @@ h4 {
   margin-top: 20px;
   border-radius: 25px;
 }
-.add-delet-button button{
+.add-delet-button button {
   width: 55px;
   height: 15px;
   text-align: center;
   border-radius: 20px;
   margin: 8px;
-  background:rgba(60, 105, 125, 555);
+  background: rgba(60, 105, 125, 555);
   color: white;
   font-size: 18px;
-  
+
   box-shadow: 0 0 6px rgb(3, 184, 255), 0 0 6px white;
   transition: 0.4s ease-in-out;
 }
-.add-delet-button button:hover{
+.add-delet-button button:hover {
   transform: scale(1.5);
   background-color: rgb(3, 184, 255);
   box-shadow: 0 0 10px rgb(3, 184, 255);
   cursor: pointer;
 }
-.add-delet-button p{
+.add-delet-button p {
   font-size: 18px;
-  color:white;
+  color: white;
 }
 .products-price {
   font-weight: 600;
@@ -98,12 +96,12 @@ h4 {
   margin-top: 20px;
   color: rgb(57, 56, 56);
 }
-h5{
+h5 {
   color: white;
   font-weight: 100px;
   font-size: 20px;
 }
-.order-summary{
+.order-summary {
   padding: 35px 35px;
   border: 1px solid rgb(57, 56, 56);
   display: grid;
@@ -115,27 +113,147 @@ h5{
 }
 .order-dettails,
 .prices,
-.place-order{
+.place-order {
   display: grid;
-  grid-gap:12px;
+  grid-gap: 12px;
 }
-.place-order button{
-  background:rgb(3, 184, 255);
+.place-order button {
+  background: rgb(3, 184, 255);
   border-radius: 25px;
-  transition:0.4s ease-in-out ;
+  transition: 0.4s ease-in-out;
 
   font-size: 15px;
   padding: 5px 0;
 }
-.place-order button:hover{
+.place-order button:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px white, 0 0 25px rgb(3, 184, 255);
   cursor: pointer;
 }
-.total{
+.total {
   color: black;
 
   font-weight: 800px;
   font-size: 30px;
 }
+/*responsive*/
+@media (max-width: 1615px) {
+  .order-summary {
+    padding: 35px 35px;
+    grid-gap: 25px 40px;
+    color: whitesmoke;
+    font-size: 23px;
+    width: 400px;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 200px;
+  }
+  .products-container {
+    padding: 40px 18px 18px 18px;
+    height: 260px;
+  }
+  .products-detaills {
+    max-height: 20px;
+    min-height: 100px;
+    margin-left: 25px;
+  }
+  .products-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .products-description {
+    font-size: 10px;
+  }
+  .products-price {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 12px;
+  }
+  .add-delet-button {
+    width: 100px;
+    height: 25px;
+    padding: 16px 10px 16px 10px;
+    margin-top: 12px;
+  }
+  .order-dettails,
+  .prices,
+  .place-order {
+    font-size: 20px;
+  }
+  .place-order button {
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 5px 7px;
+  }
+}
+@media (max-width: 800px) {
+  .cart-container {
+    margin-left: 30px;
+  }
+  .order-summary {
+    padding: 35px 20px 35px 20px;
+    grid-gap: 15px 20px;
+    width: 300px;
+  }
+  h5 {
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  .products-container {
+    padding: 40px 18px 18px 18px;
+    height: 200px;
+    width: 260px;
+  }
+  
+  .products-name {
+    font-size: 12px;
+    font-weight: bolder;
+  }
+  .products-description {
+    font-size: 8px;
+  }
+  .products-price {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .add-delet-button {
+    width: 80px;
+    height: 25px;
+    margin-top: 2px;
+  }
+}
+@media (max-width: 600px) {
+  .cart-container {
+    margin-left: 10px;
+  }
+  .order-summary {
+    padding: 35px 18px 35px 18px;
+    grid-gap: 15px 10px;
+    width: 190px;
+  }
+  .products-container {
+    padding: 40px 12px 18px 12px;
+    height: 220px;
+  }
+  .order-dettails,
+  .prices,
+  .place-order{
+    font-size: 13px;
+  }
+  .total {
+    font-size: 18px;
+  }
 
+  .place-order button {
+    font-size: 10px;
+  
+  }
+  .footer{
+    width: 500px;
+  }
+
+}
