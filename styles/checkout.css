@@ -55,12 +55,7 @@ h5 {
   margin-bottom: 16px;
   overflow-x: hidden;
 }
-.products-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10px;
-}
+
 .products-img img {
   max-width: 100%;
   max-height: 100%;
@@ -104,3 +99,40 @@ h5 {
   transform: scale(1.1);
   box-shadow: 0 0 25px rgb(3, 184, 255), 0 0 15px white;
   cursor: pointer;}
+
+  /*responsive*/
+  @media (max-width:1200px){
+    .orders-container {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+  @media (max-width:800px){
+    .orders-container {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .orders-header {
+      padding: 20px 25px;
+      font-size: xx-large;
+      width: 620px;
+    }
+    .order-label {
+      font-size: 20px;
+      font-weight: 100;
+    }
+    .products-container {
+      padding: 40px 25px 25px 25px;
+      margin-bottom: 16px;
+      width: 620px;
+      height: 200px;
+    }
+    .footer{
+      width: 720px;
+    }
+  }
+  @media (max-width:600px){
+    .footer{
+      width: 700px;
+    }
+  }
