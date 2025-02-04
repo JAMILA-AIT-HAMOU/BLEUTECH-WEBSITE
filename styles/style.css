@@ -538,7 +538,7 @@ h3 {
     margin-left: 1px;
   }
   .navbar a {
-    font-size: 6px;
+    font-size: 4px;
     margin-left: 0px;
   }
 
@@ -574,13 +574,14 @@ h3 {
 
   .content h1 {
     font-size: 13px;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.3rem;
     margin-left: 3rem;
     margin-right: 2rem;
     margin-top: 4rem;
   }
   .content p {
     font-size: 6px;
+    margin-bottom: 0.08rem;
   }
   .shope-now-button {
     margin-left: 3rem;
@@ -595,7 +596,7 @@ h3 {
   }
   .content-container-img {
     width: 200px;
-    height: 200px;
+    height: 170px;
     margin-right: 3rem;
   }
   .product-name {
@@ -620,8 +621,8 @@ h3 {
     margin-bottom: 6px;
   }
   h3 {
-    font-size: 20px;
-    margin-top: 1px;
+    font-size: 18px;
+    margin-top: 35px;
   }
   .add-to-cart-button {
     font-size: 10px;
@@ -650,4 +651,11 @@ h3 {
   }
   
   
+}
+@media(max-width:325px){
+  .content-container-img {
+    width: 200px;
+    height: 118px;
+    margin-right: 3rem;
+  }
 }
